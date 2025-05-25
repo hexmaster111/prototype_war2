@@ -1,0 +1,38 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "preLaunchTask": "build",
+            "request": "launch",
+            // "program": "${workspaceFolder}/couchparty",
+            // "program": "${workspaceFolder}/minigame_zipzap",
+            // "program": "${workspaceFolder}/minigame_flapper",
+            // "program": "${workspaceFolder}/minigame_dancedance",
+            // "program": "${workspaceFolder}/minigame_xb",
+            "program": "${workspaceFolder}/minigame_war2",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}
